@@ -4,3 +4,4 @@
 - fzf
 - bat
 - lsDeluxe
+- Oh-my-Posh
