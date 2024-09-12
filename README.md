@@ -3,3 +3,4 @@
 ## Prerequisites
 - fzf
 - bat
+- lsDeluxe
