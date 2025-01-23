@@ -1,7 +1,10 @@
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/space.omp.json" | Invoke-Expression
 
 function fuzzy_find {
-    fzf --preview 'bat --color=always --line-range :500 {}'
+  $fpath = fzf --preview 'bat --color=always --line-range :500 {}'
+  if ($fpath) {
+    Invoke-Item $fpath
+  }
 }
 
 
